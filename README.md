@@ -1,8 +1,67 @@
-Personal Finance AI - Frontend MockupThis project is a standalone, containerized frontend for a modern Personal Finance AI dashboard. It is built with React and styled with Tailwind CSS, providing a visually appealing and responsive user interface for displaying financial data.The application is currently running with mock data and is designed to be connected to a backend API for full functionality.FeaturesModern Dashboard UI: A clean, dark-themed interface designed for clarity and ease of use.Responsive Design: The layout adapts gracefully to various screen sizes, from mobile to desktop.Data Visualization: Interactive charts powered by Recharts for visualizing spending by category and cash flow over time.Component-Based Architecture: Built with reusable React components for maintainability and scalability.Containerized: Packaged with Docker and served by a lightweight Nginx server for consistent and reliable deployment.Tech StackFrontend: React.jsStyling: Tailwind CSSCharting: RechartsIcons: Lucide ReactBuild Tool: Create React App (react-scripts)Deployment: Docker & NginxPrerequisitesBefore you begin, ensure you have the following installed on your local machine:Node.js (LTS version recommended)npm (comes with Node.js)Docker DesktopSetup and InstallationClone the repository:git clone <your-repo-url>
-cd finance-ai-frontend
-Install dependencies:This command will install all the necessary packages listed in package.json.npm install
-Running the ApplicationYou can run the application in two ways: locally for development or in a Docker container for a production-like environment.1. Local Development ModeThis method is best for active development as it provides hot-reloading.npm start
-This will start the development server and open the application in your default web browser, typically at http://localhost:3000.2. Production Mode (with Docker)This method builds the application for production and serves it from a lightweight Nginx container, exactly as we have been doing.Build the Docker image:docker build -t finance-ai-frontend .
+This project is a standalone, containerized frontend for a modern Personal Finance AI dashboard. It is built with React and styled with Tailwind CSS, providing a visually appealing and responsive user interface for displaying financial data.
+
+The application is currently running with mock data and is designed to be connected to a backend API for full functionality.
+
+---
+
+## Features
+
+-   **Modern Dashboard UI:** A clean, dark-themed interface designed for clarity and ease of use.
+-   **Responsive Design:** The layout adapts gracefully to various screen sizes, from mobile to desktop.
+-   **Data Visualization:** Interactive charts powered by Recharts for visualizing spending by category and cash flow over time.
+-   **Component-Based Architecture:** Built with reusable React components for maintainability and scalability.
+-   **Containerized:** Packaged with Docker and served by a lightweight Nginx server for consistent and reliable deployment.
+
+---
+
+## Tech Stack
+
+-   **Frontend:** React.js
+-   **Styling:** Tailwind CSS
+-   **Charting:** Recharts
+-   **Icons:** Lucide React
+-   **Build Tool:** Create React App (react-scripts)
+-   **Deployment:** Docker & Nginx
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your local machine:
+
+-   [Node.js](https://nodejs.org/en/) (LTS version recommended)
+-   [npm](https://www.npmjs.com/) (comes with Node.js)
+-   [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+---
+
+## Setup and Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/jdm6457/finance-ai-frontend.git](https://github.com/jdm6457/finance-ai-frontend.git)
+    cd finance-ai-frontend
+    ```
+
+2.  **Install dependencies:**
+    This command will install all the necessary packages listed in `package.json`.
+    ```bash
+    npm install
+    ```
+
+---
+
+## Running the Application
+
+You can run the application in two ways: locally for development or in a Docker container for a production-like environment.
+
+### 1. Local Development Mode
+
+This method is best for active development as it provides hot-reloading.
+
+```bash
+npm start
+This will start the development server and open the application in your default web browser, typically at http://localhost:3000.2. Production Mode (with Docker)This method builds the application for production and serves it from a lightweight Nginx container.Build the Docker image:docker build -t finance-ai-frontend .
 Run the Docker container:docker run --name finance-app -p 3000:80 finance-ai-frontend
 The application will be available at http://localhost:3000.Project Structure/
 ├── public/           # Static assets and index.html template

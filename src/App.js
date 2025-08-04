@@ -281,7 +281,7 @@ export default function App() {
         <main className="flex-1 p-4 sm:p-6 lg:p-8">
             <header className="flex justify-between items-center mb-8">
                 <div>
-                    <h1 className="text-3xl font-bold text-white">Welcome Back, Alex</h1>
+                    <h1 className="text-3xl font-bold text-white">Welcome Back, Quinn</h1>
                     <p className="text-slate-400">Here's your financial overview for today.</p>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -291,7 +291,7 @@ export default function App() {
                      <div className="flex items-center space-x-3">
                         <img src="https://placehold.co/40x40/64748b/e2e8f0?text=A" alt="User" className="w-10 h-10 rounded-full border-2 border-slate-600" />
                         <div>
-                            <p className="text-white font-semibold">Alex Turner</p>
+                            <p className="text-white font-semibold">Quinn Pennyworth</p>
                             <p className="text-xs text-slate-400">Premium User</p>
                         </div>
                     </div>
